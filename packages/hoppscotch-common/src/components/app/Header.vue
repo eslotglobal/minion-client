@@ -13,7 +13,10 @@
           paddingLeft: platform.ui?.appHeader?.paddingLeft?.value,
         }"
       >
-        <div class="flex">
+        <div class="flex items-center space-x-0 hover:bg-primaryDark px-2 focus-visible:bg-primaryDark">
+          <!-- Logo and App Name -->
+          <img src="/logo.svg" alt="Apinion" class="h-7 w-7" />
+          
           <!-- Unified Switcher (orgs + instances in one dropdown) -->
           <tippy
             v-if="
@@ -26,7 +29,6 @@
             :on-shown="() => switcherRef?.focus()"
             :on-create="onSwitcherCreate"
           >
-            <img src="/logo.svg" alt="Apinion" class="h-7 w-7" />
             <HoppButtonSecondary
               class="!font-bold uppercase tracking-wide !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark"
               :label="t('app.name')"
@@ -59,7 +61,7 @@
 
           <HoppButtonSecondary
             v-else
-            class="!font-bold uppercase tracking-wide !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark"
+            class="!font-bold px-0 uppercase tracking-wide !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark"
             :label="t('app.name')"
             to="/"
           />
