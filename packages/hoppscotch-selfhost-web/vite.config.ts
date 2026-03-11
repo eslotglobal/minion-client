@@ -35,6 +35,7 @@ export default defineConfig({
   },
   preview: {
     port: 3000,
+    allowedHosts: "all",
   },
   publicDir: path.resolve(__dirname, "../hoppscotch-common/public"),
   build: {
