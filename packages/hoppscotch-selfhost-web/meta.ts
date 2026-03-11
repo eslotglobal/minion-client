@@ -6,7 +6,7 @@ export const APP_INFO = {
   description:
     "Helps you create requests faster, saving precious time on development.",
   keywords:
-    "apinion, hopp scotch, apinion online, apinion app, postwoman, postwoman chrome, postwoman online, postwoman for mac, postwoman app, postwoman for windows, postwoman google chrome, postwoman chrome app, get postwoman, postwoman web, postwoman android, postwoman app for chrome, postwoman mobile app, postwoman web app, api, request, testing, tool, rest, websocket, sse, graphql, socketio",
+    "apinion, api nion, apinion online, apinion app, postman, postwoman chrome, postman online, postman for mac, postman app, postman for windows, postman google chrome, postman chrome app, get postman, postman web, postman android, postman app for chrome, postman mobile app, postman web app, api, request, testing, tool, rest, websocket, sse, graphql, socketio",
   app: {
     background: "#181818",
     lightThemeColor: "#ffffff",

@@ -4,9 +4,9 @@
   >
     <div class="flex flex-col items-center space-y-6 max-w-md text-center">
       <div class="flex items-center space-x-4">
-        <img src="/logo.svg" alt="Hoppscotch" class="h-7 w-7" />
+        <img src="/logo.svg" alt="Apinion" class="h-7 w-7" />
         <div class="flex flex-col items-start">
-          <h1 class="text-2xl font-semibold text-secondaryDark">Hoppscotch</h1>
+          <h1 class="text-2xl font-semibold text-secondaryDark">Apinion</h1>
           <p class="text-secondary text-sm">Desktop</p>
         </div>
       </div>
@@ -35,7 +35,7 @@
           <p class="text-secondary mt-1">
             {{
               updateMessage ||
-              "A new version of Hoppscotch is available, downloading..."
+              "A new version of Apinion is available, downloading..."
             }}
           </p>
         </div>
@@ -298,7 +298,7 @@ const loadVendored = async () => {
     // right now this is part 1/5 of HFE-864
     const vendoredInstance: VendoredInstance = {
       type: "vendored",
-      displayName: "Hoppscotch",
+      displayName: "Apinion",
       version: "26.2.1",
     }
 
@@ -332,12 +332,12 @@ const loadVendored = async () => {
 
     console.log("Loading vendored app...")
     const loadResp = await load({
-      bundleName: "Hoppscotch",
-      window: { title: "Hoppscotch" },
+      bundleName: "Apinion",
+      window: { title: "Apinion" },
     })
 
     if (!loadResp.success) {
-      throw new Error("Failed to load Hoppscotch Vendored")
+      throw new Error("Failed to load Apinion Vendored")
     }
 
     console.log("Vendored app loaded successfully")

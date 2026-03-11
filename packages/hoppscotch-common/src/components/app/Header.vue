@@ -26,6 +26,7 @@
             :on-shown="() => switcherRef?.focus()"
             :on-create="onSwitcherCreate"
           >
+            <img src="/logo.svg" alt="Apinion" class="h-7 w-7" />
             <HoppButtonSecondary
               class="!font-bold uppercase tracking-wide !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark"
               :label="t('app.name')"

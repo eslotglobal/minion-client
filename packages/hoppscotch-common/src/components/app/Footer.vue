@@ -100,14 +100,14 @@
               <HoppSmartItem
                 :icon="IconGithub"
                 :label="`${t('app.github')}`"
-                to="https://github.com/hoppscotch/hoppscotch"
+                to="https://github.com/misujon"
                 blank
                 @click="hide()"
               />
               <HoppSmartItem
                 :icon="IconTwitter"
                 :label="`${t('app.twitter')}`"
-                to="https://hoppscotch.io/twitter"
+                to="https://x.com/misujondev"
                 blank
                 @click="hide()"
               />
@@ -124,7 +124,7 @@
               <HoppSmartItem
                 :icon="IconLock"
                 :label="`${t('app.terms_and_privacy')}`"
-                to="https://docs.hoppscotch.io/support/privacy"
+                to="#"
                 blank
                 @click="hide()"
               />
@@ -239,9 +239,9 @@ const nativeShare = () => {
   if (navigator.share) {
     navigator
       .share({
-        title: "Hoppscotch",
-        text: "Hoppscotch • Open source API development ecosystem - Helps you create requests faster, saving precious time on development.",
-        url: "https://hoppscotch.io",
+        title: "Apinion",
+        text: "Apinion • Open source API development ecosystem - Helps you create requests faster, saving precious time on development.",
+        url: "https://apinion.io",
       })
       .catch(console.error)
   } else {

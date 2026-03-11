@@ -61,12 +61,12 @@ export async function createHoppApp(
 
   await initService.initPost()
 
-  console.info(
-    "%cWE ♥️ OPEN SOURCE",
-    "margin:8px 0;font-family:sans-serif;font-weight:600;font-size:60px;color:violet;"
-  )
-  console.info(
-    "%cContribute: https://github.com/hoppscotch/hoppscotch",
-    "margin:8px 0;font-family:sans-serif;font-weight:500;font-size:24px;color:violet;"
-  )
+  // console.info(
+  //   "%cWE ♥️ OPEN SOURCE",
+  //   "margin:8px 0;font-family:sans-serif;font-weight:600;font-size:60px;color:violet;"
+  // )
+  // console.info(
+  //   "%cContribute: https://github.com/hoppscotch/hoppscotch",
+  //   "margin:8px 0;font-family:sans-serif;font-weight:500;font-size:24px;color:violet;"
+  // )
 }

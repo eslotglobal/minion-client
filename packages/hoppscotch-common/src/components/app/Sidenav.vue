@@ -1,6 +1,4 @@
 <template>
-            <h1>Hello</h1>
-
   <aside class="flex h-full justify-between md:flex-col">
     <nav class="flex flex-1 flex-nowrap bg-primary md:flex-none md:flex-col">
       <HoppSmartLink
