@@ -238,6 +238,7 @@ declare module 'vue' {
     IconLucideAlertTriangle: typeof import('~icons/lucide/alert-triangle')['default']
     IconLucideArrowLeft: typeof import('~icons/lucide/arrow-left')['default']
     IconLucideArrowUpRight: typeof import('~icons/lucide/arrow-up-right')['default']
+    IconLucideBrush: typeof import('~icons/lucide/brush')['default']
     IconLucideCheck: typeof import('~icons/lucide/check')['default']
     IconLucideCheckCircle: typeof import('~icons/lucide/check-circle')['default']
     IconLucideChevronRight: typeof import('~icons/lucide/chevron-right')['default']
