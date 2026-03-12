@@ -16,11 +16,11 @@ export type Instance = {
 
 export const VENDORED_INSTANCE_CONFIG: Instance = {
   kind: "vendored" as const,
-  serverUrl: "app://hoppscotch",
-  displayName: "Hoppscotch Desktop",
+  serverUrl: "app://apinion",
+  displayName: "apinion Desktop",
   version: "26.2.1",
   lastUsed: new Date().toISOString(),
-  bundleName: "Hoppscotch",
+  bundleName: "Apinion",
 }
 
 export type ConnectionState =

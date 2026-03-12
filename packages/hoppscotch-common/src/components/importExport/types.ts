@@ -3,7 +3,7 @@ import { Component, Ref } from "vue"
 import { defineStep } from "~/composables/step-components"
 
 export type SupportedImportFormat =
-  | "hoppscotch"
+  | "apinion"
   | "postman"
   | "insomnia"
   | "openapi"

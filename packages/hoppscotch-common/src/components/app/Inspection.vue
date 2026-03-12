@@ -22,7 +22,7 @@
             </span>
             <HoppButtonSecondary
               v-tippy="{ theme: 'tooltip' }"
-              to="https://docs.hoppscotch.io/documentation/features/inspections"
+              to="https://docs.apinion.io/documentation/features/inspections"
               blank
               :title="t('app.wiki')"
               :icon="IconHelpCircle"

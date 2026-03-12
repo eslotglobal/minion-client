@@ -407,7 +407,7 @@ const shortcodeBaseURL = computed(() => {
 })
 
 const copyEmbed = () => {
-  return `<iframe src="${shortcodeBaseURL.value}/e/${props.request?.id}" title="Hoppscotch Embed" style="width: 100%; height: 480px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.1);"></iframe>`
+  return `<iframe src="${shortcodeBaseURL.value}/e/${props.request?.id}" title="Apinion Embed" style="width: 100%; height: 480px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.1);"></iframe>`
 }
 
 const copyButton = (
@@ -424,18 +424,18 @@ const copyButton = (
   }
 
   if (type === "markdown") {
-    return `[![Run in Hoppscotch](${shortcodeBaseURL.value}/${badge})](${shortcodeBaseURL.value}/r/${props.request?.id})`
+    return `[![Run in Apinion](${shortcodeBaseURL.value}/${badge})](${shortcodeBaseURL.value}/r/${props.request?.id})`
   }
-  return `<a href="${shortcodeBaseURL.value}/r/${props.request?.id}"><img src="${shortcodeBaseURL.value}/${badge}" alt="Run in Hoppscotch" /></a>`
+  return `<a href="${shortcodeBaseURL.value}/r/${props.request?.id}"><img src="${shortcodeBaseURL.value}/${badge}" alt="Run in Apinion" /></a>`
 }
 
 const copyLink = (variationID: string) => {
   if (variationID === "link1") {
     return `${shortcodeBaseURL.value}/r/${props.request?.id}`
   } else if (variationID === "link2") {
-    return `<a href="${shortcodeBaseURL.value}/r/${props.request?.id}">Run in Hoppscotch</a>`
+    return `<a href="${shortcodeBaseURL.value}/r/${props.request?.id}">Run in Apinion</a>`
   }
-  return `[Run in Hoppscotch](${shortcodeBaseURL.value}/r/${props.request?.id})`
+  return `[Run in Apinion](${shortcodeBaseURL.value}/r/${props.request?.id})`
 }
 
 const copyContent = ({

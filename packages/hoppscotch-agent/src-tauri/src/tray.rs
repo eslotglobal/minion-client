@@ -65,7 +65,7 @@ pub fn create_tray(app: &AppHandle) -> tauri::Result<()> {
         .build()?;
 
     let _ = TrayIconBuilder::with_id("hopp-tray")
-        .tooltip("Hoppscotch Agent")
+        .tooltip("Apinion Agent")
         .icon(if cfg!(target_os = "macos") {
             TRAY_ICON.clone()
         } else {

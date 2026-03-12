@@ -2,7 +2,7 @@
   "name": "@hoppscotch/codemirror-lang-graphql",
   "version": "0.2.0",
   "description": "GraphQL language support for CodeMirror",
-  "author": "Hoppscotch (support@hoppscotch.io)",
+  "author": "Apinion (support@apinion.io)",
   "license": "MIT",
   "scripts": {
     "prepare": "rollup -c && tsc --emitDeclarationOnly --declaration"

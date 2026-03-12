@@ -62,13 +62,13 @@ const emit = defineEmits<{
   (e: "hide-modal"): void
 }>()
 
-const url = "https://hoppscotch.io"
-const text = "Hoppscotch - Open source API development ecosystem."
+const url = "https://apinion.io"
+const text = "Apinion - Open source API development ecosystem."
 const description =
   "Helps you create requests faster, saving precious time on development."
-const subject = "Checkout Hoppscotch - an open source API development ecosystem"
-const summary = `Hi there!%0D%0A%0D%0AI thought you'll like this new platform that I joined called Hoppscotch - https://hoppscotch.io.%0D%0AIt is a simple and intuitive interface for creating and managing your APIs. You can build, test, document, and share your APIs.%0D%0A%0D%0AThe best part about Hoppscotch is that it is open source and free to get started.%0D%0A%0D%0A`
-const twitter = "hoppscotch_io"
+const subject = "Checkout Apinion - an open source API development ecosystem"
+const summary = `Hi there!%0D%0A%0D%0AI thought you'll like this new platform that I joined called Apinion - https://apinion.io.%0D%0AIt is a simple and intuitive interface for creating and managing your APIs. You can build, test, document, and share your APIs.%0D%0A%0D%0AThe best part about Apinion is that it is open source and free to get started.%0D%0A%0D%0A`
+const twitter = "apinion_io"
 
 const copyIcon = refAutoReset<typeof IconCopy | typeof IconCheck>(
   IconCopy,

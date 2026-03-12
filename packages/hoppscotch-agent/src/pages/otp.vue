@@ -3,7 +3,7 @@
     <h1 class="font-bold text-lg text-white">Agent Registration Request</h1>
     <div v-if="otpCode">
       <p class="tracking-wide">
-        An app is trying to register against the Hoppscotch Agent. If this was
+        An app is trying to register against the Apinion Agent. If this was
         intentional, copy the given code into the app to complete the
         registration process. Please hide the window if you did not initiate
         this request. Do not hide this window until the verification code is

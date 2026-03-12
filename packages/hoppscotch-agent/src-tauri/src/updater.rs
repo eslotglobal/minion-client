@@ -26,7 +26,7 @@ pub async fn check_and_install_updates(
                         .map(|body| format!("\n\nRelease Notes: {}", body))
                         .unwrap_or("".into())
                 ))
-                .title("Hoppscotch Agent Update Available")
+                .title("Apinion Agent Update Available")
                 .kind(MessageDialogKind::Info)
                 .buttons(MessageDialogButtons::OkCancelCustom(
                     "Update".to_string(),
@@ -42,9 +42,9 @@ pub async fn check_and_install_updates(
         }
         #[cfg(feature = "portable")]
         {
-            let download_url = "https://hoppscotch.com/download";
+            let download_url = "https://apinion.io/#";
             let message = format!(
-                "An update (version {}) is available for the Hoppscotch Agent.\n\nPlease download the latest portable version from our website.",
+                "An update (version {}) is available for the Apinion Agent.\n\nPlease download the latest portable version from our website.",
                 update.version
             );
 

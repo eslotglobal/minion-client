@@ -134,7 +134,7 @@ onMounted(async () => {
             await persistenceService.setLocalConfig("cookiesAllowed", "yes")
             toastObject.goAway(0)
             window
-              .open("https://docs.hoppscotch.io/support/privacy", "_blank")
+              .open("https://docs.apinion.io/support/privacy", "_blank")
               ?.focus()
           },
         },

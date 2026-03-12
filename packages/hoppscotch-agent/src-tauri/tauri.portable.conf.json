@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2.0.0-rc",
-  "productName": "Hoppscotch Agent Portable",
+  "productName": "Apinion Agent Portable",
   "version": "0.1.16",
   "identifier": "io.hoppscotch.agent",
   "build": {
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "Hoppscotch Agent Portable",
+        "title": "Apinion Agent Portable",
         "width": 600,
         "height": 400,
         "center": true,

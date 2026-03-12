@@ -53,7 +53,7 @@
                 ref="documentation"
                 :icon="IconBook"
                 :label="`${t('app.documentation')}`"
-                to="https://docs.hoppscotch.io"
+                to="https://docs.apinion.io"
                 blank
                 :shortcut="['D']"
                 @click="hide()"

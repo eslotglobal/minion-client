@@ -8,7 +8,7 @@ export const whatsNew: HoppFooterMenuItem = {
   icon: IconGift,
   action: {
     type: "link",
-    href: "https://docs.hoppscotch.io/documentation/changelog",
+    href: "https://docs.apinion.io/documentation/changelog",
   },
 }
 
@@ -18,7 +18,7 @@ export const status: HoppFooterMenuItem = {
   icon: IconActivity,
   action: {
     type: "link",
-    href: "https://status.hoppscotch.io",
+    href: "https://status.apinion.io",
   },
 }
 

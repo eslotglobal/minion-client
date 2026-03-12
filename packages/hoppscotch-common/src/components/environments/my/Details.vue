@@ -29,7 +29,7 @@
               <div class="flex flex-1 items-center justify-between">
                 <HoppButtonSecondary
                   v-tippy="{ theme: 'tooltip' }"
-                  to="https://docs.hoppscotch.io/documentation/features/environments"
+                  to="https://docs.apinion.io/documentation/features/environments"
                   blank
                   :title="t('app.wiki')"
                   :icon="IconHelpCircle"

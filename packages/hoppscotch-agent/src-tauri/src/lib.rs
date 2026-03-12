@@ -67,7 +67,7 @@ pub fn hide_main_window(app_handle: &AppHandle) -> AgentResult<()> {
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    tracing::info!("Initializing Hoppscotch Agent");
+    tracing::info!("Initializing Apinion Agent");
 
     // The installer takes care of installing `WebView`,
     // this check is only required for portable variant.

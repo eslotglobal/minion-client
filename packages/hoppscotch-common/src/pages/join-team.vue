@@ -134,7 +134,7 @@
     <div class="p-4">
       <HoppButtonSecondary
         class="!font-bold tracking-wide !text-secondaryDark"
-        label="HOPPSCOTCH"
+        label="APINION"
         to="/"
       />
     </div>

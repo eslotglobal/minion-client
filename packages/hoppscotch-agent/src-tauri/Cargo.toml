@@ -1,7 +1,7 @@
 [package]
-name = "hoppscotch-agent"
+name = "apinion-agent"
 version = "0.1.16"
-description = "A cross-platform HTTP request agent for Hoppscotch for advanced request handling including custom headers, certificates, proxies, and local system integration."
+description = "A cross-platform HTTP request agent for Apinion for advanced request handling including custom headers, certificates, proxies, and local system integration."
 authors = ["AndrewBastin", "CuriousCorrelation"]
 edition = "2021"
 

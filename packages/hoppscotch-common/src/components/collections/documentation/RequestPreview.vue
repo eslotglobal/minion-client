@@ -426,7 +426,7 @@ const openInNewTab = () => {
     // If in read-only mode (published documentation), open external link
     // for now open hoppscotch.io, we can pass the request to be opened in the future
     if (props.readOnly) {
-      platform.kernelIO.openExternalLink({ url: "https://hoppscotch.io" })
+      platform.kernelIO.openExternalLink({ url: "https://apinion.io" })
       return
     }
 

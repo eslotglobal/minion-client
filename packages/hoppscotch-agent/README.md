@@ -1,23 +1,23 @@
 <div align="center">
    <img align="center" width="128px" src="public/icon.png" />
-   <h1 align="center"><b>Hoppscotch Agent</b></h1>
+   <h1 align="center"><b>Apinion Agent</b></h1>
    <h2 align="center">
-      <a href="https://github.com/hoppscotch/agent-releases">Download</a> |
-      <a href="https://docs.hoppscotch.io/documentation/clients/agent">Official Docs</a>
+      <a href="https://github.com/apinion/agent-releases">Download</a> |
+      <a href="https://docs.apinion.io/documentation/clients/agent">Official Docs</a>
    </h2>
 </div>
 
 <br/>
 
-#### Hoppscotch Agent is a cross-platform HTTP request relay for Hoppscotch built with [Tauri V2](https://v2.tauri.app/) that adds capabilities like custom headers, certificates, proxies, and local access typically restricted in browsers.
+#### Apinion Agent is a cross-platform HTTP request relay for Apinion built with [Tauri V2](https://v2.tauri.app/) that adds capabilities like custom headers, certificates, proxies, and local access typically restricted in browsers.
 
-The agent runs as a local system service on port `9119`, acting as an intermediary between the Hoppscotch web application and target APIs. It establishes an encrypted communication channel authenticated via an OTP registration process.
+The agent runs as a local system service on port `9119`, acting as an intermediary between the Apinion web application and target APIs. It establishes an encrypted communication channel authenticated via an OTP registration process.
 
 ## Installation
 
 ### Standard Installation
 
-1. Download the latest version of Hoppscotch Agent from [releases](https://github.com/hoppscotch/agent-releases)
+1. Download the latest version of Apinion Agent from [releases](https://github.com/Apinion/agent-releases)
 2. Run the installer
 3. Follow the installation wizard to complete setup
 4. The agent automatically starts and appears in your system tray
@@ -38,7 +38,7 @@ The portable version runs without installation and does not include automatic up
 
 ### Registration
 
-1. Open Hoppscotch web app and navigate to **Settings** → **Interceptors**
+1. Open Apinion web app and navigate to **Settings** → **Interceptors**
 2. Select **Agent** from the available interceptors  
 3. Click **Register Agent** button
 4. The agent window displays a 6-digit verification code
@@ -48,7 +48,7 @@ The portable version runs without installation and does not include automatic up
 
 ### Usage
 
-Once registered, all HTTP requests made through Hoppscotch are processed by the agent. The agent provides:
+Once registered, all HTTP requests made through Apinion are processed by the agent. The agent provides:
 
 - CORS bypass by processing requests locally
 - Client certificate authentication for mutual TLS
@@ -88,7 +88,7 @@ The agent supports client certificate authentication for APIs requiring mutual T
 
 ### Configuration
 
-1. Access **Settings** → **Interceptors** → **Agent** in Hoppscotch
+1. Access **Settings** → **Interceptors** → **Agent** in Apinion
 2. Select the target domain from the domain selector
 3. Click **Client Certificates** button
 4. Choose certificate format (PEM or PFX tab)
@@ -137,16 +137,16 @@ The agent runs with system tray integration, providing access to:
 ### Configuration Storage
 The agent stores configuration in platform-specific locations:
 
-- **Windows**: `%APPDATA%\io.hoppscotch.agent\`
-- **macOS**: `~/Library/Application Support/io.hoppscotch.agent/`  
-- **Linux**: `~/.config/io.hoppscotch.agent/`
+- **Windows**: `%APPDATA%\io.apinion.agent\`
+- **macOS**: `~/Library/Application Support/io.apinion.agent/`  
+- **Linux**: `~/.config/io.apinion.agent/`
 
 ### Logging
 Logs are stored in platform-specific directories:
 
-- **Windows**: `%LOCALAPPDATA%\io.hoppscotch.agent\logs\`
-- **macOS**: `~/Library/Logs/io.hoppscotch.agent/`
-- **Linux**: `~/.local/share/io.hoppscotch.agent/logs/`
+- **Windows**: `%LOCALAPPDATA%\io.apinion.agent\logs\`
+- **macOS**: `~/Library/Logs/io.apinion.agent/`
+- **Linux**: `~/.local/share/io.apinion.agent/logs/`
 
 ### Auto-Start Configuration
 The standard installation includes auto-start functionality. The portable version does not include auto-start and must be launched manually.
@@ -164,8 +164,8 @@ The standard installation includes auto-start functionality. The portable versio
 
 ```bash
 # Clone the repository  
-git clone https://github.com/hoppscotch/hoppscotch.git
-cd hoppscotch/packages/hoppscotch-agent
+git clone https://github.com/apinion/apinion.git
+cd apinion/packages/apinion-agent
 
 # Install dependencies
 pnpm install
@@ -222,7 +222,7 @@ The agent runs on port `9119` by default. Make sure this port is not blocked by 
 ## Troubleshooting
 
 ### Agent Detection Issues
-1. **"Agent not detected" popup**: Verify the agent is running by checking the system tray for the Hoppscotch icon
+1. **"Agent not detected" popup**: Verify the agent is running by checking the system tray for the Apinion icon
 2. **Switching interceptors blocked**: If the "Agent not detected" popup prevents switching interceptors, restart your browser and stop the agent before changing interceptor settings
 3. **Port accessibility**: Check that no firewall is blocking port `9119`  
 4. **Browser compatibility**: Safari on macOS may have CORS issues with localhost:9119 due to access control checks, try Chrome/Firefox for agent registration
@@ -232,7 +232,7 @@ The agent runs on port `9119` by default. Make sure this port is not blocked by 
 2. **Missing OTP input field**: Verify the agent window is focused and displaying a 6-digit verification code
 3. **OTP expiration**: Registration codes have limited lifetime, restart the registration process if the code expires
 4. **Network connectivity**: Verify browser can reach localhost:9119/handshake
-5. **Version compatibility**: Some agent versions may be incompatible with specific Hoppscotch web app versions. For self-hosted setups, make sure Agent version in the release matches, see https://github.com/hoppscotch/hoppscotch/issues/4936#issuecomment-2756981053
+5. **Version compatibility**: Some agent versions may be incompatible with specific Apinion web app versions. For self-hosted setups, make sure Agent version in the release matches, see https://github.com/apinion/apinion/issues/4936#issuecomment-2756981053
 
 ### Certificate Issues
 1. Verify certificate format is supported (.pem or .pfx/.pkcs12)
@@ -274,8 +274,8 @@ The agent runs on port `9119` by default. Make sure this port is not blocked by 
 
 ### Log
 Check agent logs for detailed error information:
-- **Windows**: `%LOCALAPPDATA%\io.hoppscotch.agent\logs\`
-- **macOS**: `~/Library/Logs/io.hoppscotch.agent/`
-- **Linux**: `~/.local/share/io.hoppscotch.agent/logs/`
+- **Windows**: `%LOCALAPPDATA%\io.apinion.agent\logs\`
+- **macOS**: `~/Library/Logs/io.apinion.agent/`
+- **Linux**: `~/.local/share/io.apinion.agent/logs/`
 
 Look for connection errors, certificate validation failures, or proxy authentication issues in the log files.

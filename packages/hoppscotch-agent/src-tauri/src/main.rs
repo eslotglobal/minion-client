@@ -24,7 +24,7 @@ fn main() {
     let Some(log_file_path) = path else {
         eprint!("Failed to setup logging!");
 
-        println!("Starting Hoppscotch Agent...");
+        println!("Starting Apinion Agent...");
 
         return hoppscotch_agent_lib::run();
     };
@@ -32,7 +32,7 @@ fn main() {
     let Ok(LogGuard(guard)) = logger::setup(&log_file_path) else {
         eprint!("Failed to setup logging!");
 
-        println!("Starting Hoppscotch Agent...");
+        println!("Starting Apinion Agent...");
 
         return hoppscotch_agent_lib::run();
     };
@@ -42,7 +42,7 @@ fn main() {
     // so safe to have it like this.
     let _guard = guard;
 
-    tracing::info!("Starting Hoppscotch Agent...");
+    tracing::info!("Starting Apinion Agent...");
 
     hoppscotch_agent_lib::run()
 }

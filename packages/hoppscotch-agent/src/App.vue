@@ -5,7 +5,7 @@
     <template v-if="O.isSome(state().otp)">
       <div class="flex-grow">
         <p class="tracking-wide">
-          An app is trying to register against the Hoppscotch Agent. If this was
+          An app is trying to register against the Apinion Agent. If this was
           intentional, copy the given code into the app to complete the
           registration process. Please cancel the registration if you did not
           initiate this request. The window will hide automatically once

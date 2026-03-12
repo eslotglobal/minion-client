@@ -1,7 +1,7 @@
 <template>
   <GithubButton
-    title="Star Hoppscotch on GitHub"
-    href="https://github.com/hoppscotch/hoppscotch"
+    title="Star Apinion on GitHub"
+    href="https://github.com/apinion/apinion"
     :data-color-scheme="
       colorMode.value != 'light'
         ? colorMode.value == 'black'
@@ -11,7 +11,7 @@
     "
     data-show-count="true"
     data-text="Star"
-    aria-label="Star Hoppscotch on GitHub"
+    aria-label="Star Apinion on GitHub"
     :data-size="size"
   />
 </template>
