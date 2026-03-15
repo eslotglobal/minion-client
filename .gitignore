@@ -188,3 +188,8 @@ devenv.local.nix
 .cursor/
 .aider*
 .windsurfrules
+
+
+.github
+.devcontainer
+.husky
